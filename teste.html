@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raffael Chess</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: 
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+      background-size: 40px 40px;
+      background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+      background-color: #fff;
+    }
+
+    .bg-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 20px;
+      min-height: 100vh;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #00b894;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .sponsors {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .sponsors img {
+      max-width: 180px;
+      margin: 20px;
+    }
+
+    .sponsors a {
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-overlay">
+    <header>
+      <img src="logo.jpg" alt="Logo do Site">
+    </header>
+
+    <h1>Bem-vindo ao site oficial do Raffael Chess</h1>
+    <h2>Envie sua partida em PGN para análise personalizada!</h2>
+
+    <div class="form-container">
+      <form>
+        <label for="nome">Seu Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Seu Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pgn">Cole aqui sua partida (formato PGN)</label>
+        <textarea id="pgn" name="pgn" rows="6" required></textarea>
+
+        <button type="submit">Enviar Partida</button>
+      </form>
+    </div>
+
+    <div class="sponsors">
+      <h2>Patrocinadores</h2>
+      <a href="https://www.gmsupialboredo.com.br/" target="_blank">
+        <img src="supialboredo.png" alt="Supi Alboredo">
+      </a>
+      <a href="https://br1.ggpoker.com/" target="_blank">
+        <img src="ggpoker.png" alt="GG Poker">
+      </a>
+    </div>
+
+    <footer>
+      &copy; 2025 Raffael Chess - Todos os direitos reservados.
+    </footer>
+  </div>
+</body>
+</html>
