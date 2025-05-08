@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: #ffd700;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.torneio-destaque,
+.links-transmissao,
+.resultados {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.torneio-destaque p,
+.links-transmissao ul li,
+.resultados p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.links-transmissao ul {
+  list-style: none;
+}
+
+.links-transmissao li a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.links-transmissao li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #111;
+  color: #fff;
+  margin-top: 50px;
+}
